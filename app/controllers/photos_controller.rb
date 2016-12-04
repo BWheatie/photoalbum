@@ -1,6 +1,6 @@
-class PhotoController < ApplicationController
+class PhotosController < ApplicationController
     def new
-        @photo = Photo.new
+        @photo = Photos.new
     end
 
     def create
@@ -9,7 +9,7 @@ class PhotoController < ApplicationController
     end
 
     def index
-        @photo = Photos.all
+        @photos = Photos.all
     end
 
     def show
